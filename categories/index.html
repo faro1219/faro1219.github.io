@@ -595,10 +595,21 @@
 
 
 
-      
-      
-       
-    
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '0472c2bb2f4c8825d336',
+          clientSecret: '6b2f518502fd070e42753cdac247bdf19fbda8de',
+          repo: 'faro1219.github.io',
+          owner: 'faro1219',
+          admin: ['faro1219'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
 
   
 
