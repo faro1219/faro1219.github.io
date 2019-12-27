@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Wasserstein Projection Pursuit</title>
+    <url>/2019/12/26/OT/</url>
+    <content><![CDATA[<p>最近看Google Scholar 推送的论文（1），突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。</p>
+<a id="more"></a>
+<script type="math/tex; mode=display">
+W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的工作就是一件事情。证明了MSW和Wasserstein distance 的 metric等价性。</p>
+<p>但是比较有趣的是，人们终于开始对这个东西感兴趣了。晚上和学长分析了一会儿这个问题，然后他带我回顾了一下Jon和Philippe的文章（2）。之前我一直搞不明白最后的Vac 理论，听他一讲就领会了。就是oracle其实是新定义的一种基本运算，然后结果是发现在加上这种运算之后，估计结果趋近真实值的代价依旧是指数级别的增长。</p>
+<p>换言之，尽管在理论上证明，如果知道MSW，MSW的误差和Wasserstein distance 的误差是没有收到curse of dimension，但是用来估计MSW的算法，在某些特殊的例子下是会收到维度诅咒的。这也真是太恶心了，Jon明明给了那么漂亮的证明，最后的结果还是告诉我们证明就只是漂亮，并没有什么实际用处。</p>
+<p>但是有趣的是，学长还给我推了一篇别的论文（3）。那篇论文不管MSW是否在某些Assumption下和W distance 相等，而是直接给了一个算法，并且说明这个会收敛（但是没有找到理论证明？？）。非常奇妙，我看了一下，其实就是最简单的梯度法+特征值分解。本来当时和Jon做的时候我也想到特征值分解，但是Jon完全不同意我搞这个。没想到最后的结果还是特征值起作用，啧啧，世事难料。</p>
+<p>不过一旦开始使用特征值，也就说明了很难用在我和Lim考虑的Projection W distance 上，因为相当于我们要去找特征值最小的特征向量？通常而言，找最小的特征向量都非常不靠谱，容易被扰动。可能需要别的算法来解决问题吧。</p>
+<p>看样子这个方面的问题还是有很多可以探索的。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><em>Bayraktar, E., Guo, G.</em> (2019). <strong>Strong equivalence between metrics of Wasserstein type</strong></li>
+<li><em>Niles-Weed, J., Rigollet, P.</em> (2019). <strong>Estimation of Wasserstein distances in the Spiked Transport Model</strong></li>
+<li>Meng, Cheng, et al. “Large-scale optimal transport map estimation using projection pursuit.” <em>Advances in Neural Information Processing Systems</em>. 2019.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>Wasserstein</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>平安</title>
     <url>/2019/12/24/chriseve/</url>
     <content><![CDATA[<img src="/2019/12/24/chriseve/chriseve.jpg" class="">
-
 <a id="more"></a>
-
 <p>昨晚不知道发生了什么，评论区突然崩溃，最后网页也卡住打不开。Google查了半天也找不到解决办法，结果早上一觉醒来就发现网页恢复了。所以这算是某种圣诞节礼物吗？</p>
 <p>这几天一直处在生日发生的事情的余震中，甚至没勇气老老实实的记录。但是要流水账一般描述也很容易，【在我23岁生日的晚上，相处四年的女朋友和我摊牌并且和平分手】。听上去并不是什么特别有冲击感的事情，只是和平分手的时间碰巧和生日重合了，就变得有些荒唐起来。</p>
 <p>这次分手我背全锅，在某些事情我一而再再而三的伤害了她，算是我咎由自取。其实最开始和吴东晓交往，我就没整理好自己的情绪，没有放下对过去人的情感。而且比较致命的是，我至始至终都没意识到真诚对一段亲密关系的重要性，觉得有些事情没有必要讲就跳过就是。但我手段也没有那么高明做不到瞒天过海吧哈哈哈。</p>
@@ -25,9 +45,7 @@
     <title>冬至</title>
     <url>/2019/12/23/winter/</url>
     <content><![CDATA[<img src="/2019/12/23/winter/winter1.jpg" class="">
-
 <a id="more"></a>
-
 <p>写下标题正好是冬至，开始敲字的时候已经是圣诞前夜了。</p>
 <p>第一次搭自己的网页，光是一个小小的评论区就折腾了一上午，页面尾端的统计也老是出问题，还有标签，分类几个网页之前的引用也有点毛病。这就是老是在Google里面搜索教程的不靠谱之处，发现几个教程都是互相抄袭，甚至有抄漏的部分。可是好开心，拥有自己搭建的博客，仿佛在一个熙熙攘攘人来人往的集市，给自己搭了一处落脚之地。距离上次这样积极主动的对外界输出，已经过去3年了吧。最近种种事情发生，说不定正好是一个重新敞开的契机。</p>
 <p>确实是需要更social一点了。话不多说，让我们开始来立几个flag：</p>
