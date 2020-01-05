@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Lost Paradise">
 <meta property="og:description" content="最近看Google Scholar 推送的论文1，突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。">
 <meta property="article:published_time" content="2019-12-27T03:47:39.000Z">
-<meta property="article:modified_time" content="2020-01-05T05:21:38.866Z">
+<meta property="article:modified_time" content="2020-01-05T18:11:38.070Z">
 <meta property="article:author" content="Will Cai">
 <meta property="article:tag" content="Wasserstein">
 <meta property="article:tag" content="Projection pursuit">
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -349,8 +349,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Research-Notes/" itemprop="url" rel="index">
-                    <span itemprop="name">Research Notes</span>
+                  <a href="/categories/Research-notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Research notes</span>
                   </a>
                 </span>
 
@@ -378,14 +378,14 @@
             <div class="post-wordcount">
               
                 
-                  <span class="post-meta-divider">|</span>
-                
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
                 <span title="字数统计">
-                  
+                  635
                 </span>
               
 
@@ -649,14 +649,14 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
       <div class="footer-inner">
         <script
   async
-  src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
 ></script>
+
 <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Will Cai</span>
-
   
 </div>
 
@@ -697,6 +697,8 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
