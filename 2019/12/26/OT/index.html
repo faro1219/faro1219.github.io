@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Wasserstein," />
+  <meta name="keywords" content="Wasserstein,Projection pursuit," />
 
 
 
@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="最近看Google Scholar 推送的论文（1），突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。">
+<meta name="description" content="最近看Google Scholar 推送的论文1，突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Wasserstein Projection Pursuit">
 <meta property="og:url" content="http://yoursite.com/2019/12/26/OT/index.html">
 <meta property="og:site_name" content="Lost Paradise">
-<meta property="og:description" content="最近看Google Scholar 推送的论文（1），突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。">
+<meta property="og:description" content="最近看Google Scholar 推送的论文1，突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。">
 <meta property="article:published_time" content="2019-12-27T03:47:39.000Z">
-<meta property="article:modified_time" content="2019-12-27T04:33:22.677Z">
+<meta property="article:modified_time" content="2020-01-05T05:21:38.866Z">
 <meta property="article:author" content="Will Cai">
 <meta property="article:tag" content="Wasserstein">
+<meta property="article:tag" content="Projection pursuit">
 <meta name="twitter:card" content="summary">
 
 
@@ -336,6 +337,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Research-Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Research Notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -363,20 +386,24 @@
       
 
       
-        <p>最近看Google Scholar 推送的论文（1），突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。</p>
+        <p>最近看Google Scholar 推送的论文<sup><a href="#fn_1" id="reffn_1">1</a></sup>，突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。</p>
 <a id="more"></a>
 <script type="math/tex; mode=display">
 W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的工作就是一件事情。证明了MSW和Wasserstein distance 的 metric等价性。</p>
-<p>但是比较有趣的是，人们终于开始对这个东西感兴趣了。晚上和学长分析了一会儿这个问题，然后他带我回顾了一下Jon和Philippe的文章（2）。之前我一直搞不明白最后的Vac 理论，听他一讲就领会了。就是oracle其实是新定义的一种基本运算，然后结果是发现在加上这种运算之后，估计结果趋近真实值的代价依旧是指数级别的增长。</p>
+<p>但是比较有趣的是，人们终于开始对这个东西感兴趣了。晚上和学长分析了一会儿这个问题，然后他带我回顾了一下Jon和Philippe的文章<sup><a href="#fn_2" id="reffn_2">2</a></sup>。之前我一直搞不明白最后的Vac 理论，听他一讲就领会了。就是oracle其实是新定义的一种基本运算，然后结果是发现在加上这种运算之后，估计结果趋近真实值的代价依旧是指数级别的增长。</p>
 <p>换言之，尽管在理论上证明，如果知道MSW，MSW的误差和Wasserstein distance 的误差是没有收到curse of dimension，但是用来估计MSW的算法，在某些特殊的例子下是会收到维度诅咒的。这也真是太恶心了，Jon明明给了那么漂亮的证明，最后的结果还是告诉我们证明就只是漂亮，并没有什么实际用处。</p>
-<p>但是有趣的是，学长还给我推了一篇别的论文（3）。那篇论文不管MSW是否在某些Assumption下和W distance 相等，而是直接给了一个算法，并且说明这个会收敛（但是没有找到理论证明？？）。非常奇妙，我看了一下，其实就是最简单的梯度法+特征值分解。本来当时和Jon做的时候我也想到特征值分解，但是Jon完全不同意我搞这个。没想到最后的结果还是特征值起作用，啧啧，世事难料。</p>
+<p>但是有趣的是，学长还给我推了一篇别的论文<sup><a href="#fn_3" id="reffn_3">3</a></sup>。那篇论文不管MSW是否在某些Assumption下和W distance 相等，而是直接给了一个算法，并且说明这个会收敛（但是没有找到理论证明？？）。非常奇妙，我看了一下，其实就是最简单的梯度法+特征值分解。本来当时和Jon做的时候我也想到特征值分解，但是Jon完全不同意我搞这个。没想到最后的结果还是特征值起作用，啧啧，世事难料。</p>
 <p>不过一旦开始使用特征值，也就说明了很难用在我和Lim考虑的Projection W distance 上，因为相当于我们要去找特征值最小的特征向量？通常而言，找最小的特征向量都非常不靠谱，容易被扰动。可能需要别的算法来解决问题吧。</p>
 <p>看样子这个方面的问题还是有很多可以探索的。</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
-<li><em>Bayraktar, E., Guo, G.</em> (2019). <strong>Strong equivalence between metrics of Wasserstein type</strong></li>
-<li><em>Niles-Weed, J., Rigollet, P.</em> (2019). <strong>Estimation of Wasserstein distances in the Spiked Transport Model</strong></li>
-<li>Meng, Cheng, et al. “Large-scale optimal transport map estimation using projection pursuit.” <em>Advances in Neural Information Processing Systems</em>. 2019.</li>
-</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><blockquote id="fn_1">
+<sup>1</sup>. Bayraktar, E., Guo, G.<em> (2019). <em>*Strong equivalence between metrics of Wasserstein type</em></em><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. Niles-Weed, J., Rigollet, P.<em> (2019). <em>*Estimation of Wasserstein distances in the Spiked Transport Model</em></em><a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. Meng, Cheng, et al. “Large-scale optimal transport map estimation using projection pursuit.” <em>Advances in Neural Information Processing Systems</em>. 2019.<a href="#reffn_3" title="Jump back to footnote [3] in the text."> &#8617;</a>
+</blockquote>
 
       
     </div>
@@ -394,7 +421,9 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
       
         <div class="post-tags">
           
-            <a href="/tags/Wasserstein/" rel="tag"># Wasserstein</a>
+            <a href="/tags/Wasserstein/" rel="tag"><i class="fa fa-tag"></i> Wasserstein</a>
+          
+            <a href="/tags/Projection-pursuit/" rel="tag"><i class="fa fa-tag"></i> Projection pursuit</a>
           
         </div>
       
@@ -510,13 +539,22 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -539,18 +577,6 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
                     <a href="mailto:willcai7@163.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.facebook.com/will.cai.773" target="_blank" title="FB Page">
-                      
-                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://stackoverflow.com/users/8329705/will-cai" target="_blank" title="StackOverflow">
-                      
-                        <i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
                   </span>
                 
             </div>
@@ -1143,5 +1169,10 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
 
   
 
-</body>
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":30,"vOffset":15},"mobile":{"show":false},"react":{"opacityDefault":1,"opacityOnHover":0.2},"log":false});</script></body>
 </html>

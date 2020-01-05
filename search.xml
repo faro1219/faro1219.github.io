@@ -3,8 +3,7 @@
   <entry>
     <title>廿廿</title>
     <url>/2020/01/01/newyear/</url>
-    <content><![CDATA[<img src="/2020/01/01/newyear/newyear1.jpg" class="">
-<a id="more"></a>
+    <content><![CDATA[<p><div style="width:100%;margin:auto"><img src="/2020/01/01/newyear/newyear1.jpg" class="" title="Photo by Ricardo Rocha"></div><br><a id="more"></a></p>
 <p>新年已至，又到了一个新的年代。其实我倒没有对这些人为设定的时间节点有特殊的感受，就是普通的新年而已。但2020年，客观上肯定会是对我的未来有举足轻重作用的一年——得申请phd了。</p>
 <p>昨晚和统计系众人包饺子。这还是我第一次包，完全不会弄陷，也不会和面擀面和包。幸好有一个妹子【鹬】相当会包，拯救了我这位手残人士。尽管不想承认，但我确实是一个手残人士，因为手指手掌都偏大，那些细微的操作实在做不好。然后去下面观摩【马】做海鲜汤，突然碰见了邻居【鼠】。之前因为我的室友【山羊】和【鼠】的室友是高中同学，所以早早见过两面，但后面都未曾联系过。当时直观感觉是他有些木讷，但非常勤奋，很符合那种学术人士的设定。后面听到【山羊】说【鼠】在大学通过教toefl赚了很多钱，并且还经常健身，就觉这人有趣。</p>
 <p>之后罕见的玩了狼人，距离上次玩应该都有1年了。暑假肯定是没有玩过的，来这边也一直没有，玩的相当烂。几乎局局坑害队友，被几个狼人玩弄在手心。不过我本来也不算那种特别厉害的，不知道为什么大家都捧杀我。玩了几局，就到了0点，跨年之前【马】带着几位妹子早早离场，然后众人交换了几句新年快乐，就各回各家了。</p>
@@ -18,13 +17,15 @@
 <p>哈哈，新年快乐。</p>
 ]]></content>
       <tags>
-        <tag>essay</tag>
+        <tag>New year</tag>
+        <tag>Break up</tag>
       </tags>
   </entry>
   <entry>
     <title>孑然</title>
     <url>/2019/12/28/lonely/</url>
-    <content><![CDATA[<img src="/2019/12/28/lonely/lonely1.png" class="">
+    <content><![CDATA[<div style="width:70%;margin:auto"><img src="/2019/12/28/lonely/lonely1.png" class="" title="《悠长假期》的宣传海报"></div>
+
 <a id="more"></a>
 <p>这几天过得远比想象的孤独。昨天一整天都在看一部日剧《悠长假期》。其实老早就在各种地方看见这部剧的介绍，木村拓哉也是第一个有点喜欢的日本男星——小时候不知在哪儿看到了记者对smap的采访，然后一眼就记住了留着长发的木村。</p>
 <p>看剧情介绍认为这部剧相当浮夸，讲一个钢琴家和大龄模特的恋爱故事。这两个职业都不算特别的接地气，而且还是直接同居。但其实看着剧情推进，一切也顺理成章。大龄模特叶山南婚礼当天，无良未婚夫捐款逃婚。当她怒不可遏的狂奔到未婚夫居所，只堵截到了无辜的室友濑名——一个不得志的24岁钢琴家。身无分文又无家可归的小南对濑名威逼利诱，成为了他的新同居人。两人在同一屋檐下的生活磕磕绊绊 ，渐生情愫。</p>
@@ -34,36 +35,48 @@
 <p>在美帝孤苦伶仃还是挺难受的，下次圣诞还是回家或者跟同学去旅游吧。</p>
 <p>确实已经孑然一身。</p>
 ]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
       <tags>
-        <tag>essay</tag>
+        <tag>日剧</tag>
       </tags>
   </entry>
   <entry>
     <title>Wasserstein Projection Pursuit</title>
     <url>/2019/12/26/OT/</url>
-    <content><![CDATA[<p>最近看Google Scholar 推送的论文（1），突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。</p>
+    <content><![CDATA[<p>最近看Google Scholar 推送的论文<sup><a href="#fn_1" id="reffn_1">1</a></sup>，突然发现了一个叫做sliced Wasserstein distance的东西。仔细一看，其中的maximal sliced Wasserstein distance 其实跟我在MIT做的Wasserstein distance under projection pursuit 一模一样。</p>
 <a id="more"></a>
 <script type="math/tex; mode=display">
 W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的工作就是一件事情。证明了MSW和Wasserstein distance 的 metric等价性。</p>
-<p>但是比较有趣的是，人们终于开始对这个东西感兴趣了。晚上和学长分析了一会儿这个问题，然后他带我回顾了一下Jon和Philippe的文章（2）。之前我一直搞不明白最后的Vac 理论，听他一讲就领会了。就是oracle其实是新定义的一种基本运算，然后结果是发现在加上这种运算之后，估计结果趋近真实值的代价依旧是指数级别的增长。</p>
+<p>但是比较有趣的是，人们终于开始对这个东西感兴趣了。晚上和学长分析了一会儿这个问题，然后他带我回顾了一下Jon和Philippe的文章<sup><a href="#fn_2" id="reffn_2">2</a></sup>。之前我一直搞不明白最后的Vac 理论，听他一讲就领会了。就是oracle其实是新定义的一种基本运算，然后结果是发现在加上这种运算之后，估计结果趋近真实值的代价依旧是指数级别的增长。</p>
 <p>换言之，尽管在理论上证明，如果知道MSW，MSW的误差和Wasserstein distance 的误差是没有收到curse of dimension，但是用来估计MSW的算法，在某些特殊的例子下是会收到维度诅咒的。这也真是太恶心了，Jon明明给了那么漂亮的证明，最后的结果还是告诉我们证明就只是漂亮，并没有什么实际用处。</p>
-<p>但是有趣的是，学长还给我推了一篇别的论文（3）。那篇论文不管MSW是否在某些Assumption下和W distance 相等，而是直接给了一个算法，并且说明这个会收敛（但是没有找到理论证明？？）。非常奇妙，我看了一下，其实就是最简单的梯度法+特征值分解。本来当时和Jon做的时候我也想到特征值分解，但是Jon完全不同意我搞这个。没想到最后的结果还是特征值起作用，啧啧，世事难料。</p>
+<p>但是有趣的是，学长还给我推了一篇别的论文<sup><a href="#fn_3" id="reffn_3">3</a></sup>。那篇论文不管MSW是否在某些Assumption下和W distance 相等，而是直接给了一个算法，并且说明这个会收敛（但是没有找到理论证明？？）。非常奇妙，我看了一下，其实就是最简单的梯度法+特征值分解。本来当时和Jon做的时候我也想到特征值分解，但是Jon完全不同意我搞这个。没想到最后的结果还是特征值起作用，啧啧，世事难料。</p>
 <p>不过一旦开始使用特征值，也就说明了很难用在我和Lim考虑的Projection W distance 上，因为相当于我们要去找特征值最小的特征向量？通常而言，找最小的特征向量都非常不靠谱，容易被扰动。可能需要别的算法来解决问题吧。</p>
 <p>看样子这个方面的问题还是有很多可以探索的。</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
-<li><em>Bayraktar, E., Guo, G.</em> (2019). <strong>Strong equivalence between metrics of Wasserstein type</strong></li>
-<li><em>Niles-Weed, J., Rigollet, P.</em> (2019). <strong>Estimation of Wasserstein distances in the Spiked Transport Model</strong></li>
-<li>Meng, Cheng, et al. “Large-scale optimal transport map estimation using projection pursuit.” <em>Advances in Neural Information Processing Systems</em>. 2019.</li>
-</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><blockquote id="fn_1">
+<sup>1</sup>. Bayraktar, E., Guo, G.<em> (2019). <em>*Strong equivalence between metrics of Wasserstein type</em></em><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. Niles-Weed, J., Rigollet, P.<em> (2019). <em>*Estimation of Wasserstein distances in the Spiked Transport Model</em></em><a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. Meng, Cheng, et al. “Large-scale optimal transport map estimation using projection pursuit.” <em>Advances in Neural Information Processing Systems</em>. 2019.<a href="#reffn_3" title="Jump back to footnote [3] in the text."> &#8617;</a>
+</blockquote>
 ]]></content>
+      <categories>
+        <category>Research Notes</category>
+      </categories>
       <tags>
         <tag>Wasserstein</tag>
+        <tag>Projection pursuit</tag>
       </tags>
   </entry>
   <entry>
     <title>平安</title>
     <url>/2019/12/24/chriseve/</url>
-    <content><![CDATA[<img src="/2019/12/24/chriseve/chriseve.jpg" class="">
+    <content><![CDATA[<div style="width:100%;margin:auto"><img src="/2019/12/24/chriseve/chriseve.jpg" class="" title="Photo by Joakim Honkasalo"></div>
+
 <a id="more"></a>
 <p>昨晚不知道发生了什么，评论区突然崩溃，最后网页也卡住打不开。Google查了半天也找不到解决办法，结果早上一觉醒来就发现网页恢复了。所以这算是某种圣诞节礼物吗？</p>
 <p>这几天一直处在生日发生的事情的余震中，甚至没勇气老老实实的记录。但是要流水账一般描述也很容易，【在我23岁生日的晚上，相处四年的女朋友和我摊牌并且和平分手】。听上去并不是什么特别有冲击感的事情，只是和平分手的时间碰巧和生日重合了，就变得有些荒唐起来。</p>
@@ -75,23 +88,28 @@ W_p(u,v) = \max_{s\in S^1}W_p(s(u), s(v)).</script><p>然后里面主要做的�
 <p>祝我23岁生日快乐。</p>
 <p>祝我，祝【灰猫】，祝所有人圣诞快乐。</p>
 ]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
       <tags>
-        <tag>essay</tag>
+        <tag>Break up</tag>
       </tags>
   </entry>
   <entry>
     <title>冬至</title>
     <url>/2019/12/23/winter/</url>
-    <content><![CDATA[<img src="/2019/12/23/winter/winter1.jpg" class="">
-<a id="more"></a>
+    <content><![CDATA[<p><div style="width:100%;margin:auto"><img src="/2019/12/23/winter/winter1.jpg" class="" title="Photo by Sandy Ching"></div><br><a id="more"></a></p>
 <p>写下标题正好是冬至，开始敲字的时候已经是圣诞前夜了。</p>
 <p>第一次搭自己的网页，光是一个小小的评论区就折腾了一上午，页面尾端的统计也老是出问题，还有标签，分类几个网页之前的引用也有点毛病。这就是老是在Google里面搜索教程的不靠谱之处，发现几个教程都是互相抄袭，甚至有抄漏的部分。可是好开心，拥有自己搭建的博客，仿佛在一个熙熙攘攘人来人往的集市，给自己搭了一处落脚之地。距离上次这样积极主动的对外界输出，已经过去3年了吧。最近种种事情发生，说不定正好是一个重新敞开的契机。</p>
 <p>确实是需要更social一点了。话不多说，让我们开始来立几个flag：</p>
 <p>博客主要想发三类东西。第一是杂记散文，用来记录生活的琐碎小事。第二是学术工作，讲些cool的论文或者想法或者工具。第三是读书笔记，分析一些最近看的书。希望每月都至少有一篇新东西就行。</p>
 <p>嗯。估计flag很快就会倒下。那就等倒下之后再立新的flag吧。</p>
 ]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
       <tags>
-        <tag>essay</tag>
+        <tag>Flags</tag>
       </tags>
   </entry>
 </search>
