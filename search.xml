@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>躲避</title>
+    <url>/2020/01/19/escape/</url>
+    <content><![CDATA[<div style="width:100%;margin:auto"><img src="/2020/01/19/escape/escape1.jpg" class="" title="Photo by Shaun Darwood"></div>
+
+<a id="more"></a>
+<p>最近这一周，过得很情绪化。前三天特别兴奋，兴奋到晚上睡不着觉，后三天特别沮丧，一直玩游戏。转折点也非常直接，就是论文的实验效果之前以为很好，最后在大型测试里面还是不行。其实也早该有所预料，我并不是一个擅长写代码的人，然后handle的又是一个非凸优化，自然容易爆炸。在某些特殊的小test里面，会有好的结果，但是整体上，依旧得不到保障吧。我还是太性急了。</p>
+<p>然后转入精神的沉沦期，就开始没日没夜的dota，玩到整个人都晃神为止。之前我一直把dota当做一种娱乐方式，但就我最近反复戒dota失败的事实，我得重新认识下这款游戏对我的意义。我现在觉得，dota是我用来躲避现实中失意的办法，就和以前【灰猫】喝酒一样，和【马】打篮球一样。短暂的麻痹自己的意识，然后等到情绪逐渐缓和，和自己失败的部分妥协，再重新开始。我这几天尽管在玩dota，但还是不停地想着算法的事情，最后终于认识到这是一个现阶段我的能力无法解决的事情，准备放弃，做后面的部分。早该意识到和Wasserstein相关的非凸优化是非常困难的事情。</p>
+<p>我有点想换一种解压的办法，运动肯定是最好的。像以前，打排球就是我最喜欢的，忘掉一切的办法。最后脑子也会非常清醒。想健身，画画或者看书吧。毕竟dota上，我是没多大信心走到下一个level，需要太多时间（等申请到top了，可以试一试？）。画画的话，得从头开始，从光影开始练，又有点累哈哈。但没事可以慢慢来。看书看剧其实不错，毕竟还有不少书想要看。现在开始攒些剧。</p>
+<p>本来是想，在这篇论文里面，结束一切有关Wasserstein的事情。但其实很难吧，以后应该也很难脱离这个东西。毕竟不是特别甘心，还有好多力量未使出来。</p>
+<p>现在我不会再像以前一样要求自己一往无前。可以合理的躲避这个世界。</p>
+]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>Dream</tag>
+        <tag>Work</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>雨世</title>
     <url>/2020/01/11/rain/</url>
     <content><![CDATA[<div style="width:100%;margin:auto"><img src="/2020/01/11/rain/rain1.jpg" class="" title="Photo by Lola Guti"></div>
@@ -170,8 +190,8 @@
         <category>Essay</category>
       </categories>
       <tags>
-        <tag>Break up</tag>
         <tag>New year</tag>
+        <tag>Break up</tag>
       </tags>
   </entry>
   <entry>
